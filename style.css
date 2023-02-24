@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+}
+.container {
+  display: flex;
+  width: 550px;
+  height: 400px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 15px;
+}
+.left {
+  width: 50%;
+}
+.left img {
+  border-radius: 15px 0 0 15px;
+  height: 100%;
+  width: 100%;
+}
+.right {
+  width: 50%;
+  padding: 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right h1{
+    letter-spacing: normal;
+    font-family: 'Fraunces', serif;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+.price h1 {
+  color: hsl(158, 36%, 37%);
+}
+.price span {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  margin-left: 7%;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+}
+button svg {
+  margin-right: 0.8rem;
+}
