@@ -22,11 +22,9 @@ p {
 }
 .left {
   width: 50%;
-}
-.left img {
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
   border-radius: 15px 0 0 15px;
-  height: 100%;
-  width: 100%;
 }
 .right {
   width: 50%;
@@ -36,9 +34,9 @@ p {
   flex-direction: column;
   justify-content: space-between;
 }
-.right h1{
-    letter-spacing: normal;
-    font-family: 'Fraunces', serif;
+.right h1 {
+  letter-spacing: normal;
+  font-family: "Fraunces", serif;
 }
 .price {
   display: flex;
@@ -56,7 +54,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2rem;
+  height: 2.5rem;
   border-radius: 5px;
   border: none;
   color: hsl(0, 0%, 100%);
@@ -64,4 +62,37 @@ button {
 }
 button svg {
   margin-right: 0.8rem;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    width: fit-content;
+    padding: 1rem;
+  }
+  .container {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .left {
+    height: 50vh;
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius:   15px 15px 0 0 ;
+
+  }
+  .right{
+    border-radius:  0 0 15px 15px ;
+  }
+  .right p {
+    margin: 0.5rem 0;
+  }
+  button{
+    height: 3rem;
+    margin-top: 0.5rem;
+  }
 }
